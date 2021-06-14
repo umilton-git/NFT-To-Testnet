@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
 contract TestnetNFT is ERC721 {
     uint256 public tokenCounter;
-    constructor () public ERC721 ("TestNFT", "NFT"){
+    constructor () public ERC721 ("MPATestNFT", "MPA"){
         tokenCounter = 0;
     }
 

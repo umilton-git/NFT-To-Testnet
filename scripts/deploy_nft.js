@@ -9,7 +9,7 @@ module.exports = async function(callback) {
       const accounts = await web3.eth.getAccounts()
   
       // Fetch the deployed NFT contract
-      console.log("Deploying the NFT Contract")
+      console.log("Fetching the NFT Contract")
       const NFT = await TestnetNFT.deployed()
       console.log('NFT Contract Address:', NFT.address)
   
@@ -21,7 +21,7 @@ module.exports = async function(callback) {
       console.log("Creating an NFT")
       const NFTCounter = await NFT.tokenCounter()
       console.log("NFT Counter: ", NFTCounter.toString())
-      const transaction = await NFT.createCollectible(test_uri, { from: owner })
+      await NFT.createCollectible(test_uri, { from: owner })
       console.log("NFT minted to owner")
       const NFTOwner = await NFT.ownerOf(0)
       console.log("NFT Owner: ", NFTOwner)

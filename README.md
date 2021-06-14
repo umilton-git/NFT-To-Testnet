@@ -12,3 +12,5 @@ Note: installing these repositories individually is only necessary if you're cre
 
 Have fun in the Hackathon!
 
+Video with info on deploying and code walkthrough:
+https://www.youtube.com/watch?v=WNhW3xZDvOU
